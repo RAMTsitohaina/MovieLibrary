@@ -11,6 +11,12 @@
   
   .movie-card:hover {
     transform: translateY(-5px);
+    img {
+      filter: blur(8px);
+    }
+    .movie-overview {
+      opacity: 1;
+    }
   }
   
   .movie-poster {
@@ -46,6 +52,16 @@
   
   .movie-card:hover .movie-overlay {
     opacity: 1;
+  }
+
+  .movie-overview {
+    position: absolute;
+    top: 215px;
+    left: 15%;
+    width: 70%;
+    font-weight: bold;
+    opacity: 0;
+    text-align: center;
   }
   
   .favorite-btn {
